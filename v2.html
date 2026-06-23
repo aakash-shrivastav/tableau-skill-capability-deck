@@ -1501,11 +1501,11 @@ function initChartsForSlide(n) {
                 const val=dataset.data[i];
                 if(val>0){
                   const {x,y}=bar.getProps(['x','y'],true);
-                  ctx.fillStyle='#374151';
+                  ctx.fillStyle='white';
                   ctx.fillText(val,x,y-3);
                   // avg score below bar count
                   ctx.font='10px Segoe UI, system-ui, sans-serif';
-                  ctx.fillStyle='#6B7280';
+                  ctx.fillStyle='white';
                   ctx.fillText('avg '+avgs[i],x,y-3+14);
                   ctx.font='bold 12px Segoe UI, system-ui, sans-serif';
                 }
